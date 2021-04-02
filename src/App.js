@@ -14,7 +14,7 @@ function App() {
   ]
   return (
     <div className="App">
-      <h2>dynamic component form an array of object</h2>
+      <h1 style = {{textTransform: "capitalize"}}>dynamic component form an array of object</h1>
       <header className="App-header">
           {
             // map on playerProfile..
@@ -30,7 +30,7 @@ function App() {
 function Player(props){
   // object destructuring form array of object
   const {name, club, position, netIncome} = props.profile;
-  
+
   // apply style..
   const playerStyle = {
     backgroundColor: "#2E8B57",
